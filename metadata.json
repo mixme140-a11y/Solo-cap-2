@@ -1,0 +1,6 @@
+{
+  "name": "Cap 2 SOLO",
+  "description": "Portal oficial y experiencia interactiva de Cap 2 SOLO: Convento Santa Vita con lector de capítulos, radio en vivo, mapa interactivo, periódico y chat secreto.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

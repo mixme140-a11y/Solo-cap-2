@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-gothic-title: 'Cinzel Decorative', serif;
+    --font-gothic-text: 'Cinzel', serif;
+    --font-fraktur: 'UnifrakturMaguntia', cursive;
+    --font-serif-quote: 'Cormorant Garamond', serif;
+    --font-sans-ui: 'Montserrat', sans-serif;
+    --font-cursive-alex: 'Alex Brush', cursive;
+    --font-cursive-pinyon: 'Pinyon Script', cursive;
+    --font-cursive-vibes: 'Great Vibes', cursive;
+  }
+}
+
+.font-gothic-title {
+  font-family: var(--font-gothic-title);
+}
+
+.font-gothic {
+  font-family: var(--font-gothic-text);
+}
+
+.font-fraktur {
+  font-family: var(--font-fraktur);
+}
+
+.font-quote {
+  font-family: var(--font-serif-quote);
+}
+
+.font-sans-ui {
+  font-family: var(--font-sans-ui);
+}
+
+.font-cursive {
+  font-family: var(--font-cursive-alex), var(--font-cursive-vibes), cursive;
+}
+
+.font-cursive-pinyon {
+  font-family: var(--font-cursive-pinyon), cursive;
+}
+
+.font-cursive-vibes {
+  font-family: var(--font-cursive-vibes), cursive;
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08080a;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Atmospheric effects */
+.gothic-card {
+  background: linear-gradient(180deg, rgba(20, 20, 24, 0.7) 0%, rgba(12, 12, 15, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.gothic-card:hover {
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.gothic-btn {
+  background: rgba(15, 15, 18, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: all 0.2s ease;
+}
+
+.gothic-btn:hover {
+  background: rgba(28, 28, 34, 0.95);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.subtle-pulse {
+  animation: subtlePulse 3s ease-in-out infinite;
+}
+
+@keyframes subtlePulse {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+
+@keyframes bloodDrip {
+  0% { transform: translateY(0); opacity: 0.8; }
+  50% { transform: translateY(4px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.8; }
+}
+
